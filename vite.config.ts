@@ -6,6 +6,7 @@ import path from "path";
 export default defineConfig(({ mode }) => {
   const isDev = mode === "development";
   return {
+    base: "/aetherhealth/",
     server: {
       host: "::",
       port: 8080,
