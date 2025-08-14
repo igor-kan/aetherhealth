@@ -1,69 +1,231 @@
 # aetherhealth
 
-A modern web application for health management. (Please update this with a more specific description of the app's purpose and core features.)
+[![CI Status](https://github.com/igor-kan/aetherhealth/workflows/CI/badge.svg)](https://github.com/igor-kan/aetherhealth/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Last Commit](https://img.shields.io/github/last-commit/igor-kan/aetherhealth)](https://github.com/igor-kan/aetherhealth/commits/main)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC)](https://tailwindcss.com/)
 
-## Features
-- (List key features, e.g., appointment scheduling, health record access, symptom checker, etc.)
+> Modern web application built with cutting-edge technologies
 
-## Getting Started
+## ✨ Features
+
+- 🚀 **Next.js 15** with App Router for optimal performance
+- 💎 **TypeScript** for type safety and enhanced developer experience
+- 🎨 **Tailwind CSS** for modern, responsive design
+- ⚡ **Server-Side Rendering** for improved SEO and performance
+- 🔧 **Modern Development Tools** with ESLint, Prettier, and automated workflows
+
+## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js (version 18 or higher)
-- npm
+
+- Node.js 20.11.0 or later
+- npm or bun package manager
+- Git version control
 
 ### Installation
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/igor-kan/aetherhealth.git
-    cd aetherhealth
-    ```
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
 
-### Running the Development Server
-To start the development server, run:
 ```bash
-npm run dev
+# Clone the repository
+git clone https://github.com/igor-kan/aetherhealth.git
+cd aetherhealth
+
+# Install dependencies
+npm install
+# or
+bun install
 ```
-This will typically start the server on `http://localhost:3000`.
 
-## Technologies Used
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Environment Setup
 
-## Deployment (GitHub Pages)
+1. Copy the environment template:
+   ```bash
+   cp .env.example .env
+   ```
 
-You can deploy this project to GitHub Pages:
+2. Update the `.env` file with your configuration
 
-1. **Build the static site:**
-    ```bash
-    npm run build
-    ```
-2. **Install `gh-pages`:**
-    ```bash
-    npm install --save-dev gh-pages
-    ```
-3. **Update `package.json`:**
-    Add `homepage` and `scripts` for deployment:
-    ```json
-    {
-      "homepage": "https://igor-kan.github.io/aetherhealth",
-      "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
-      }
-    }
-    ```
-    **Note:** The `deploy` script uses `dist` as the build directory, which is common for Vite projects.
-4. **Deploy:**
-    ```bash
-    npm run deploy
-    ```
+### Development
 
-## Custom Domain
-You can connect a custom domain to your deployed project. Refer to your hosting provider's documentation for instructions.
+```bash
+# Start development server
+npm run dev
+# or
+bun dev
+```
+
+The application will be available at `http://localhost:3000` (or appropriate port).
+
+## 📋 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run type-check` | Run TypeScript compiler |
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── app/            # Next.js App Router pages
+├── lib/            # Utility functions
+├── hooks/          # Custom React hooks
+├── types/          # TypeScript type definitions
+└── styles/         # Global styles
+public/             # Static assets
+__tests__/          # Test files
+```
+
+## 🌐 Deployment
+
+### GitHub Pages
+
+```bash
+npm run deploy
+```
+
+### Docker
+
+```bash
+docker build -t aetherhealth .
+docker run -p 3000:3000 aetherhealth
+```
+
+## 🧪 Testing
+
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+## 🐳 Docker Support
+
+This project includes Docker support for easy deployment.
+
+```bash
+# Build the image
+docker build -t aetherhealth .
+
+# Run with Docker Compose
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+```
+
+See [DOCKER.md](DOCKER.md) for detailed Docker usage.
+
+## 📄 Environment Variables
+
+See [.env.example](.env.example) for required environment variables.
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+### Development Setup
+
+1. Fork the repository
+2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/aetherhealth.git`
+3. Create a feature branch: `git checkout -b feature/amazing-feature`
+4. Install dependencies: `npm install`
+5. Make your changes and test thoroughly
+6. Commit your changes: `git commit -m 'Add amazing feature'`
+7. Push to your branch: `git push origin feature/amazing-feature`
+8. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with modern development tools and best practices
+- Inspired by the open-source community
+- Thanks to all contributors and users
+
+## 📞 Support
+
+- 📧 **Email**: Available through GitHub profile
+- 🐛 **Issues**: [GitHub Issues](https://github.com/igor-kan/aetherhealth/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/igor-kan/aetherhealth/discussions)
+
+## 🔗 Links
+
+- 🌐 **Live Demo**: https://igor-kan.github.io/aetherhealth
+- 📚 **Documentation**: [Full Documentation](docs/)
+- 🎯 **Project Board**: [GitHub Projects](https://github.com/igor-kan/aetherhealth/projects)
+
+---
+
+**Made with ❤️ by [Igor Kan](https://github.com/igor-kan)**
+## Pre-commit Setup
+
+This project uses pre-commit hooks for code quality. To set up:
+
+```bash
+# Install pre-commit (if not already installed globally)
+pip install pre-commit
+
+# Install hooks
+pre-commit install
+
+# Or for Node.js projects with Husky:
+npm install --save-dev husky lint-staged
+npm run prepare
+```
+
+## Development with VS Code Dev Containers
+
+This project includes a VS Code dev container configuration for consistent development environments.
+
+### Prerequisites
+- Docker Desktop
+- VS Code with Remote-Containers extension
+
+### Getting Started
+1. Open the project in VS Code
+2. When prompted, click "Reopen in Container" or use Command Palette: "Remote-Containers: Reopen in Container"
+3. Wait for the container to build and start
+4. All dependencies will be automatically installed
+
+### Features
+- Pre-configured development environment
+- All necessary tools and extensions
+- Consistent setup across all machines
+- Isolated development environment
+
+
+## Code Review
+
+This repository uses CODEOWNERS for automatic review requests:
+
+- **All changes** require review from repository maintainers
+- **Pull requests** will automatically request reviews from code owners
+- **Critical files** (configuration, build, deployment) have additional review requirements
+
+See [CODEOWNERS](CODEOWNERS) for detailed review assignments.
+
+
+## Repository Configuration
+
+This repository uses `.gitattributes` for consistent file handling:
+
+- **Line endings**: Automatic normalization to LF for text files
+- **Binary files**: Proper handling of images, fonts, and compiled files  
+- **Language detection**: Accurate GitHub language statistics
+- **Generated files**: Exclusion of build artifacts from diffs and language stats
+- **Cross-platform**: Consistent behavior across Windows, macOS, and Linux
+
