@@ -156,3 +156,8 @@ dist-ssr
 *.sw?
 CLAUDE.local.md
 .claude/local/
+
+dist/
+venv/
+.venv/
+__pycache__/
