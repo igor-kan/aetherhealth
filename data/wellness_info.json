@@ -1,0 +1,48 @@
+{
+  "wellness_tips": [
+    "Drink at least 8 glasses of water a day to stay hydrated.",
+    "Aim for 7-9 hours of quality sleep each night for optimal recovery.",
+    "Take short breaks every hour to stretch and reduce sedentary strain.",
+    "Incorporate 30 minutes of moderate exercise into your daily routine.",
+    "Practice mindfulness or meditation for 10 minutes to manage stress.",
+    "Limit processed sugars and excessive caffeine intake.",
+    "Spend at least 15 minutes outdoors in natural light daily."
+  ],
+  "common_symptoms_guide": [
+    {
+      "symptom": "Fatigue",
+      "possible_causes": ["Lack of sleep", "Dehydration", "Iron deficiency", "Stress"],
+      "recommendation": "Monitor sleep patterns and fluid intake. Consult a professional if persistent."
+    },
+    {
+      "symptom": "Headache",
+      "possible_causes": ["Tension", "Eye strain", "Dehydration", "Caffeine withdrawal"],
+      "recommendation": "Rest in a dark room, hydrate, and limit screen time."
+    },
+    {
+      "symptom": "Fever",
+      "possible_causes": ["Viral infection", "Bacterial infection", "Heat exhaustion", "Inflammation"],
+      "recommendation": "Stay hydrated, rest, and monitor temperature. Consult a doctor if over 103°F (39.4°C)."
+    },
+    {
+      "symptom": "Cough",
+      "possible_causes": ["Common cold", "Allergies", "Asthma", "Air pollutants"],
+      "recommendation": "Hydrate, use a humidifier, and avoid irritants. Seek medical advice if persistent for more than 3 weeks."
+    },
+    {
+      "symptom": "Sore Throat",
+      "possible_causes": ["Viral infection", "Dry air", "Acid reflux", "Overuse of voice"],
+      "recommendation": "Gargle with warm salt water and stay hydrated. Consult a doctor if difficulty swallowing or high fever occurs."
+    },
+    {
+      "symptom": "Insomnia",
+      "possible_causes": ["Stress", "Irregular sleep schedule", "Blue light exposure", "Caffeine"],
+      "recommendation": "Establish a consistent bedtime routine, avoid screens before bed, and limit daytime naps."
+    }
+  ],
+  "emergency_contacts": {
+    "emergency": "911",
+    "telehealth": "1-800-DOCTOR",
+    "mental_health_hotline": "988"
+  }
+}
