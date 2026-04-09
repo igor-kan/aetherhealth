@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Menu, X } from "lucide-react";
+import { Brain, Menu, X, Heart } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -27,6 +27,12 @@ const Navigation = () => {
             <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
             <a href="#how-it-works" className="text-gray-600 hover:text-blue-600 transition-colors">How it Works</a>
             <a href="#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">Pricing</a>
+            <Link to="/health-dashboard">
+              <Button variant="outline" className="border-blue-200 text-blue-600 hover:bg-blue-50">
+                <Heart className="h-4 w-4 mr-2" />
+                Health Tracker
+              </Button>
+            </Link>
             <Link to="/dashboard">
               <Button variant="outline" className="border-blue-200 text-blue-600 hover:bg-blue-50">
                 Dashboard
@@ -56,6 +62,12 @@ const Navigation = () => {
               <a href="#how-it-works" className="text-gray-600 hover:text-blue-600 transition-colors">How it Works</a>
               <a href="#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">Pricing</a>
               <div className="flex flex-col space-y-2">
+                <Link to="/health-dashboard">
+                  <Button variant="outline" className="w-full border-blue-200 text-blue-600 hover:bg-blue-50">
+                    <Heart className="h-4 w-4 mr-2" />
+                    Health Tracker
+                  </Button>
+                </Link>
                 <Link to="/dashboard">
                   <Button variant="outline" className="w-full border-blue-200 text-blue-600 hover:bg-blue-50">
                     Dashboard
